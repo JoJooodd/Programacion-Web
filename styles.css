@@ -85,7 +85,8 @@ h1 {
 .logoAdd:hover {
     color: #141414;
     background-color: #808080;
-    scale: 1.05;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 }
 
 button {
