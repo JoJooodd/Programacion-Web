@@ -2,6 +2,17 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #000;
+    background-color: #141414;
     color: #fff;
+}
+
+.container-top {
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 8vh;
+    width: auto;
+    margin: 10px 0 0 10px;
 }
