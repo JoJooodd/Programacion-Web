@@ -2,21 +2,28 @@ name: Deploy to S3 + CloudFront
 
 on:
   push:
-    branches: [ "tarea-03" ]
+    branches: ["tarea-03"]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: tarea03-netflix # subdirectorio del proyecto
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use Node 20
+      - name: Use Node 20 (with npm cache)
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+          # ¡clave! ruta al lockfile dentro del subdirectorio
+          cache-dependency-path: tarea03-netflix/package-lock.json
 
       - name: Install deps
         run: npm ci
@@ -32,6 +39,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Upload to S3
+        # dist es la carpeta de salida de Vite
         run: aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
 
       - name: Invalidate CloudFront
