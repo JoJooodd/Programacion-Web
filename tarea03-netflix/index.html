@@ -1,13 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>  
+
+<body>
+    <header>
+        <div class="container-top">
+            <a href="#" target="_blank">
+                <img src="Logonetflix.png" alt="logo" class="logo">
+            </a>
+        </div>
+    </header>
+    <div class="title">
+        <h1>
+          ¿Quién eres?, Elige tu perfil
+        </h1>
+    </div>
+
+    <section class="container-Users">
+        <div class="user">
+
+            <img src="logo1.jpg" alt="LogoNetflixNo1" class="logo-User">
+            <p>Mateo</p>
+        </div>
+        <div class="user">
+
+            <img src="logo2.png" alt="LogoNetflixNo2" class="logo-User">
+            <p>Mariana</p>
+
+        </div>
+        <div class="user">
+
+            <img src="logo3.jpg" alt="LogoNetflixNo3" class="logo-User">
+            <p>Josué</p>
+
+        </div>
+        <div class="user">
+
+            <button class="logo-Add">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" 
+                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.125 48 48 141.125 48 256s93.125 208 208 208 208-93.125 
+                    208-208S370.875 48 256 48zm107 229h-86v86h-42v-86h-86v-42h86v-86h42v86h86v42z"></path>
+                </svg>
+            </button>
+
+        </div>
+    </section>
+
+    <div class="manage-Profile">
+        <button>Administrar Perfiles</button>
+    </div>
+
+
+</body>
 </html>
