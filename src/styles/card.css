@@ -30,7 +30,6 @@
     border-radius: 14px;
     width: 140px;
     height: 140px;
-    object-fit: contain;
     image-rendering: pixelated;
     display: block;
     margin: 0 auto;
@@ -54,7 +53,6 @@
 }
 
 .type-chip {
-    display: inline-block;
     padding: 6px 10px;
     margin: 0 6px 4px 0;
     border-radius: 999px;
