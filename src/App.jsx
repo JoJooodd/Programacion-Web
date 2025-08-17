@@ -26,7 +26,7 @@ export default function App() {
   if (loading) {
     return (
       <div className="pokedex">
-        <h1 className="title">Pokédex</h1>
+        <h1 className="tittle">Pokédex</h1>
         <p>Cargando…</p>
       </div>
     );
@@ -35,7 +35,7 @@ export default function App() {
   if (err) {
     return (
       <div className="pokedex">
-        <h1 className="title">Pokédex</h1>
+        <h1 className="tittle">Pokédex</h1>
         <p>Error: {err}</p>
       </div>
     );
@@ -44,7 +44,7 @@ export default function App() {
   return (
     <>
       <div className="pokedex">
-        <h1 className="title">Pokédex</h1>
+        <h1 className="tittle">Pokédex</h1>
         <div className="cards-zone">
           {pokemons.map((p) => (
             <Card
@@ -62,7 +62,8 @@ export default function App() {
         </div>
 
         <footer>
-
+          Datos recopilados de <a href="https://pokeapi.co/" target="_blank">PokéAPI</a> <br />
+          Desarrollado por <strong><a href="https://github.com/JoJooodd" target="_blank">Josué Bautista</a></strong>
         </footer>
       </div>
     </>

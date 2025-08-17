@@ -5,11 +5,14 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: aqua;
 }
 
 .tittle {
   text-align: center;
+  font-size: 2rem;  
+  margin: 1.5rem 0 2rem 0; 
+  font-weight: 700;     
+  color: "#6b7280";
 }
 
 .cards-zone {
@@ -17,6 +20,16 @@
   flex-direction: row;
   flex-wrap: wrap; 
   justify-content: center;
-  background-color: aliceblue;
+  gap: 1rem; 
+  padding: 1rem;
+  background-color: whitesmoke;
 }
 
+footer {
+  padding: 2rem 0 2rem 0;
+  text-align: center; 
+  margin: 2rem 0;
+  font-size: 14px; 
+  color: #6b7280;
+  font-size: medium;
+}
