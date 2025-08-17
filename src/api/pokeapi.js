@@ -33,7 +33,7 @@ export async function getPokemon(Url) {
             stats: Object.fromEntries((d.stats || []).map(s => [s.stat.name, s.base_stat])),
         };
     } catch (e) {
-        throw new Error('No se pudo obtener el Pokémon');
+        throw new Error('Error fetching Pokémon details');
     }
 }
 
